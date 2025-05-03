@@ -1,61 +1,77 @@
-UNDER CONSTRUCTION 
+🔧 Development & Production Based Approach
 
-Development & Production  Ready
-
+🌐 Live Demo:
 https://website-frontend-8wnm.onrender.com
 
-- It may take up to 50 till 160 seconds for the website to be online due to a free account at Render!
+⚠️ Please note: It may take between 50 to 160 seconds for the website to load due to limitations of a free Render account.
 
-- Het kan tot 50 seconden duren voordat de website online is i.v.m. een gratis account!
+NL: Het kan tot 50 seconden duren voordat de website online is i.v.m. een gratis account.
 
+🔐 Test Credentials
+To test the application, you can log in with:
 
-If you want to test, log in: 
+Username: Wimpie Blok
 
-Username:       Wimpie Blok
-Password:       Wimpie1234
+Password: Wimpie1234
 
-Note: Do NOT press on delete in the useraccountpage, otherwise you need another username and password. You can find other usernames and passwords in my github account under website-backend/src/data/users.json or create an account in de the signup page.
+⚠️ Important:
+Do NOT click the “Delete” button on the user account page, or you'll need to use a different test account.
+Alternative usernames and passwords are available in the users.json file on GitHub:
+/website-backend/src/data/users.json
+Alternatively, feel free to create a new account via the signup page.
 
-
-
-```Starting up !!!```
-
-
-(open the 1e terminal)
-npm install      
-use / npm audit fix     (if needed)
+🛠️ Local Setup Instructions
+Step 1: Frontend (Terminal 1)
 npm install
-npm run start    (for the frontend, will start on port: 5173)
+npm audit fix         # Optional, if needed
+npm run start         # Runs on port 5173
 
-
-(open the 2e terminal)
-npm install     
-use:  npm audit fix       (if needed)
+Step 2: Backend (Terminal 2)
 npm install
-npm run start    (for the backend, will start on port: 3000)
+npm audit fix         # Optional, if needed
+npm run start         # Runs on port 3000
 
+Step 3: MySQL Database (Terminal 3)
+npx prisma studio
+🧪 Testing Notes
 
-(open the 3e terminal, for the MySql database. So you will have 3 terminals open)
-npx prisma studio.
+The .env file is included for testing purposes.
 
+🚀 Project Status: Onward & Upward
 
-```The .env file is included for testing!```
-``` The integration/unit test still need to be modified for this project due many changes.```
+🔧 Current Phase (In Progress):
 
+Docker deployment setup
 
+Testing suite implementation (Unit, API & Integration tests)
 
-``` This project is done after the docker setup, unit-test, apit-test, the forgot password logic and documentation. My next project an 'E-commerce website' will have more features! ```
+Authentication flow (Forgot password, secure token handling)
 
-- Redux
-- 3e party sign-in/ Third party
-- shopping cart 
-- Paypal or Stripe
-- cookies
-- SEO
-- SEA
-- AWS / S3
-- Mobile App Android and Ios
-- hosting
+Technical documentation (Setup guide, API references)
+
+🎯 Future Goals (When Time Permits):
+Next Project: Full-Stack E-Commerce Platform
+Core Stack:
+
+Redux Toolkit for state management
+
+Third-party authentication (Google, Apple, GitHub)
+
+Shopping cart with persistent storage
+
+Advanced Features:
+
+Payment integration: Stripe/PayPal (sandbox to production)
+
+DevOps: AWS S3 + CI/CD pipelines
+
+SEO/SEA-optimized marketing strategies
+
+🌍 Long-Term Vision:
+
+Mobile apps (React Native or Flutter)
+
+Scalable hosting (AWS, Vercel)
 
 ![Screenshot 2024-10-13 164227](https://github.com/user-attachments/assets/794893f9-1fd0-4bec-b5b6-62a87bd96619)
 ![Screenshot 2024-10-11 142737](https://github.com/user-attachments/assets/92e87063-25ec-4a90-8eac-289aefc715af)
