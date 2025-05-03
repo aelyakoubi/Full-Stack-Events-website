@@ -1,78 +1,95 @@
-🔧 Development & Production Based Approach
+# 🔧 Development & Production-Based Approach
 
-🌐 Live Demo:
-https://website-frontend-8wnm.onrender.com
+## 🌐 Live Demo
 
-⚠️ Please note: It may take between 50 to 160 seconds for the website to load due to limitations of a free Render account.
+[Visit the App](https://website-frontend-8wnm.onrender.com)
 
-NL: Het kan tot 50 seconden duren voordat de website online is i.v.m. een gratis account.
+> ⚠️ **Note:** It may take **50 to 160 seconds** for the website to load due to the limitations of a free Render account.
 
-🔐 Test Credentials
-To test the application, you can log in with:
+---
 
-Username: Wimpie Blok
+## 🔐 Test Credentials
 
-Password: Wimpie1234
+To test the application, log in using:
 
-⚠️ Important:
-Do NOT click the “Delete” button on the user account page, or you'll need to use a different test account.
-Alternative usernames and passwords are available in the users.json file on GitHub:
-/website-backend/src/data/users.json
-Alternatively, feel free to create a new account via the signup page.
+- **Username:** `Wimpie Blok`
+- **Password:** `Wimpie1234`
 
-🛠️ Local Setup Instructions
+⚠️ **Important:** Do **NOT** click the “Delete” button on the user account page. If you do, you’ll need a new test account.
 
-Step 1: Frontend (Terminal 1)
+- You can find alternative credentials in this GitHub file:
+  `/website-backend/src/data/users.json`
+
+- Or simply create a new account via the **signup page**.
+
+---
+
+## 🛠️ Local Setup Instructions
+
+### Step 1: Frontend (Terminal 1)
+
+```bash
 npm install
-npm audit fix         # Optional, if needed
-npm run start         # Runs on port 5173
+npm audit fix       # Optional, if needed
+npm run start       # Starts on port 5173
+```
 
-Step 2: Backend (Terminal 2)
+### Step 2: Backend (Terminal 2)
+
+```bash
 npm install
-npm audit fix         # Optional, if needed
-npm run start         # Runs on port 3000
+npm audit fix       # Optional, if needed
+npm run start       # Starts on port 3000
+```
 
-Step 3: MySQL Database (Terminal 3)
+### Step 3: MySQL Database (Terminal 3)
+
+```bash
 npx prisma studio
-🧪 Testing Notes
+```
 
-The .env file is included for testing purposes.
+---
 
-🚀 Project Status: Onward & Upward
+## 🧪 Testing Notes
 
-🔧 Current Phase (In Progress):
+- The `.env` file is included for testing purposes.
+- Integration and unit tests are **still being updated** due to recent project changes.
 
-Docker deployment setup
+---
 
-Testing suite implementation (Unit, API & Integration tests)
+## 🚀 Project Status: Onward & Upward
 
-Authentication flow (Forgot password, secure token handling)
+### 🔧 Current Phase (In Progress):
 
-Technical documentation (Setup guide, API references)
+- Docker deployment setup
+- Testing suite (Unit, API & Integration)
+- Auth flow (Forgot Password, Secure Token Handling)
+- Technical documentation (Setup Guide, API References)
 
-🎯 Future Goals (When Time Permits):
-Next Project: Full-Stack E-Commerce Platform
-Core Stack:
+---
 
-Redux Toolkit for state management
+## 🎯 Future Goals (When Time Permits)
 
-Third-party authentication (Google, Apple, GitHub)
+**Next Project: Full-Stack E-Commerce Platform**
 
-Shopping cart with persistent storage
+### 🧰 Core Stack:
 
-Advanced Features:
+- Redux Toolkit (State Management)
+- Third-Party Authentication (Google, Apple, GitHub)
+- Persistent Shopping Cart
 
-Payment integration: Stripe/PayPal (sandbox to production)
+### 💡 Advanced Features:
 
-DevOps: AWS S3 + CI/CD pipelines
+- Payments via Stripe & PayPal (sandbox to production)
+- DevOps: AWS S3 + CI/CD Pipelines
+- SEO/SEA-Optimized Marketing
 
-SEO/SEA-optimized marketing strategies
+---
 
-🌍 Long-Term Vision:
+## 🌍 Long-Term Vision:
 
-Mobile apps (React Native or Flutter)
-
-Scalable hosting (AWS, Vercel)
+- Mobile apps (React Native or Flutter)
+- Scalable hosting (AWS, Vercel)
 
 ![Screenshot 2024-10-13 164227](https://github.com/user-attachments/assets/794893f9-1fd0-4bec-b5b6-62a87bd96619)
 ![Screenshot 2024-10-11 142737](https://github.com/user-attachments/assets/92e87063-25ec-4a90-8eac-289aefc715af)
