@@ -21,6 +21,7 @@ Alternative usernames and passwords are available in the users.json file on GitH
 Alternatively, feel free to create a new account via the signup page.
 
 🛠️ Local Setup Instructions
+
 Step 1: Frontend (Terminal 1)
 npm install
 npm audit fix         # Optional, if needed
