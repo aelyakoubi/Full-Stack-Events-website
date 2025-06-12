@@ -1,12 +1,12 @@
-.env*
+.env
 
-!.env.development
+#.env.development
 
-!.env.production
+#.env.production
 
-!.env.test
+#.env.test
 
-!.env.example
+#.env.example
 
 node_modules
 

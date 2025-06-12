@@ -1,20 +1,20 @@
-# Use a Node.js base image
-FROM node:18
+# Use the official Node.js 18 image as base
+FROM node:20
 
 # Set the working directory inside the container
-WORKDIR /usr/src/app
+WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copy dependency files first (for Docker cache)
 COPY package*.json ./
 
-# Install dependencies
+# Install NPM dependencies
 RUN npm install
 
-# Copy the rest of the application code
+# Copy the rest of the app's source code
 COPY . .
 
-# Expose port 5173 for the frontend
+# Expose the port Vite dev server runs on
 EXPOSE 5173
 
-# Start the frontend application
+# Command to start the Vite dev server
 CMD ["npm", "run", "dev"]
