@@ -28,7 +28,7 @@
     "express-validator": "^7.2.0",
     "har-validator": "latest",
     "helmet": "^7.1.0",
-    "html-pdf": "^3.0.1",
+    "puppeteer": "^24.10.1",
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.15",
@@ -42,4 +42,3 @@
     "prisma": "^5.14.0"
   }
 }
-

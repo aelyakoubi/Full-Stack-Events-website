@@ -1,4 +1,6 @@
-VITE_NODE_ENV=development
-VITE_SENTRY_DSN="https://04df8ba59e7aab0273a2bdc12eeb0e5f@o4506070639181824.ingest.sentry.io/4506072065245184"
-VITE_API_URL=http://localhost:3000
 
+VITE_NODE_ENV=development
+
+VITE_SENTRY_DSN="https://04df8ba59e7aab0273a2bdc12eeb0e5f@o4506070639181824.ingest.sentry.io/4506072065245184"
+
+VITE_API_URL=http://localhost:3000

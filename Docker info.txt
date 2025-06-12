@@ -1,0 +1,20 @@
+# Start containers (zonder rebuild)
+docker-compose up
+
+# Start containers met rebuild (voor als je Dockerfile of code hebt aangepast)
+docker-compose up --build
+
+# Start containers in de achtergrond (detached mode)
+docker-compose up -d
+
+# Stop containers en verwijder de containers (maar laat volumes bestaan)
+docker-compose down
+
+# Stop containers en verwijder containers + volumes (fresh start, ook database data weg)
+docker-compose down -v
+
+# Bekijk live logs van containers
+docker-compose logs -f
+
+# Herstart containers (stoppen en direct weer starten)
+docker-compose restart
