@@ -60,6 +60,12 @@ npx prisma studio
 
 ### 🔧 Current Phase (In Progress):
 
+- Fullsecurity 
+- Password hashing & salting
+- Rate limiting & brute-force protection
+- Input sanitization & validation
+- HTTPS-only & CORS configuratie
+- Security headers
 - Docker deployment setup   (done)
 - Testing suite (Unit, API & Integration)
 - Auth flow (Forgot Password, Secure Token Handling)
