@@ -60,7 +60,6 @@ npx prisma studio
 
 ### 🔧 Current Phase (In Progress):
 
-- Fullsecurity 
 - Password hashing & salting
 - Rate limiting & brute-force protection
 - Input sanitization & validation
