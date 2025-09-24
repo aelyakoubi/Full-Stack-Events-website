@@ -1,9 +1,10 @@
 import { Button, Heading, useDisclosure } from '@chakra-ui/react';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AddEvent } from '../components/AddEvent';
 import { EventList } from '../components/EventList'; // Import EventList
 import { EventSearch } from '../components/EventSearch';
+import Hero from '../components/Hero';
 import { LoginModal } from '../components/LoginModal'; // Import LoginModal
 import LogoutButton from '../components/LogoutButton';
 import LogoutTimer from '../components/LogoutTimer';
@@ -84,6 +85,7 @@ export const EventsPage = () => {
 
   return (
     <>
+      <Hero categories={categories} />
       <LogoutTimer />
       <Heading as='h1' textAlign='center' mt='13' fontSize={30}>
         Welcome to our events page

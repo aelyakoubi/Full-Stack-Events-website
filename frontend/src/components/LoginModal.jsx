@@ -18,7 +18,7 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { handleLogin } from '../FrontLogin/AuthUtils';
 import { OAuthButtonGroup } from '../FrontLogin/OAuthButtonGroup';
