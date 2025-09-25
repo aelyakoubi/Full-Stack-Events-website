@@ -103,8 +103,9 @@ export const EventsPage = () => {
 
               // Filter events that belong to the clicked category
               const filtered = events.filter((event) =>
-                // event.categoryIds is an array of category IDs, we check if it includes the clicked ID
-                event.categoryIds.includes(String(category.id))
+                event.categories?.some(
+                  (cat) => String(cat.id) === String(category.id)
+                )
               );
 
               setFilteredEvents(filtered); // Update the filtered events to display in EventList
@@ -113,6 +114,7 @@ export const EventsPage = () => {
           />
         )
       }
+
       <LogoutTimer />
       <Heading as='h1' textAlign='center' mt='13' fontSize={30}>
         Discover and Explore Events Near You!
