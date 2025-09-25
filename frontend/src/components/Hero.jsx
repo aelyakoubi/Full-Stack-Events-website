@@ -20,7 +20,7 @@ import { FaGamepad, FaRunning, FaSpa } from 'react-icons/fa';
   - categories: array of category objects (optional, defaults used if empty)
   - onCategoryClick: callback function triggered when a category is clicked
 */
-export const Hero = ({ categories = [], onCategoryClick }) => {
+export const Hero = ({ categories = [], onCategoryClick, activeCategory }) => {
   // Default categories with icons and description
   const defaultCategories = [
     {
@@ -61,7 +61,7 @@ export const Hero = ({ categories = [], onCategoryClick }) => {
       bgImage="url('/images/hero.jpg')" // Local background image
       bgSize='cover'
       bgPos='center'
-      h={['70vh', '90vh']} // Responsive height
+      h={['50vh', '60vh']} // Responsive height
       color='white'
       display='flex'
       flexDirection='column'
@@ -107,19 +107,20 @@ export const Hero = ({ categories = [], onCategoryClick }) => {
 
           return (
             <VStack
-              key={cat.id} // unique key required for map
+              key={cat.id}
               spacing={2}
-              bg='rgba(255,255,255,0.1)' // light transparent background
-              p={4} // padding inside block
-              borderRadius='md' // rounded corners
-              cursor='pointer' // pointer cursor on hover
-              // Hover effect for UX: highlight + slight scale up
+              bg={
+                activeCategory === cat.id ? 'teal.500' : 'rgba(255,255,255,0.1)'
+              } // Highlight if active
+              color={activeCategory === cat.id ? 'white' : 'inherit'} // Text color for contrast
+              p={4}
+              borderRadius='md'
+              cursor='pointer'
               _hover={{
                 bg: 'rgba(255,255,255,0.2)',
                 transform: 'scale(1.05)',
                 transition: '0.3s',
               }}
-              // Click event: execute callback if provided
               onClick={() => onCategoryClick && onCategoryClick(cat.id)}
             >
               {/* Category icon */}
