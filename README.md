@@ -6,7 +6,6 @@
 
 > ⚠️ **Note:** It may take **50 to 160 seconds** for the **events to be loaded** due to the cold start delay on a free Render account.
 
-
 ## 🔐 Test Credentials
 
 To test the application, log in using:
@@ -65,7 +64,7 @@ npx prisma studio
 - Input sanitization & validation
 - HTTPS-only & CORS configuratie
 - Security headers
-- Docker deployment setup   (done)
+- Docker deployment setup (done)
 - Testing suite (Unit, API & Integration)
 - Auth flow (Forgot Password, Secure Token Handling)
 - Technical documentation (Setup Guide, API References)
@@ -95,6 +94,7 @@ npx prisma studio
 - Mobile apps (React Native or Flutter)
 - Scalable hosting (AWS, Vercel)
 
+![alt text](<Screenshot 2025-09-26 150937newstyle.png>)
 ![Screenshot 2024-10-13 164227](https://github.com/user-attachments/assets/794893f9-1fd0-4bec-b5b6-62a87bd96619)
 ![Screenshot 2024-10-11 142737](https://github.com/user-attachments/assets/92e87063-25ec-4a90-8eac-289aefc715af)
 ![Screenshot 2024-10-10 203209](https://github.com/user-attachments/assets/5d0d346a-8674-4cbe-8a52-1a2a17cfdbf7)
